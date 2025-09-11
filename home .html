@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Website</title>
+  <style>
+    /* Reset & Fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+
+    /* Navbar */
+    header {
+      background: #1a237e;
+      color: #fff;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { font-size: 1.5rem; }
+    nav ul { display: flex; list-style: none; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover { color: #ffca28; }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(26, 35, 126, 0.7), rgba(26, 35, 126, 0.7)), url('https://source.unsplash.com/1600x800/?college,students') no-repeat center/cover;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 10px;
+    }
+    .hero h2 { font-size: 3rem; margin-bottom: 15px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+    .hero a {
+      background: #ffca28;
+      padding: 12px 30px;
+      border-radius: 30px;
+      color: #1a237e;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .hero a:hover { background: #fff; color: #1a237e; }
+
+    /* About Section */
+    section {
+      padding: 60px 10%;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .about img {
+      flex: 1;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    .about-text {
+      flex: 1;
+    }
+    .about-text h2 { color: #1a237e; margin-bottom: 15px; }
+
+    /* Courses Section */
+    .courses h2 { text-align: center; margin-bottom: 40px; color: #1a237e; }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .course {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .course:hover { transform: translateY(-5px); }
+    .course h3 { margin-bottom: 10px; color: #1a237e; }
+
+    /* Footer */
+    footer {
+      background: #1a237e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My College</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Welcome to Our College</h2>
+      <p>Empowering students with knowledge, skills, and values.</p>
+      <a href="#about">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about">
+      <img src="https://source.unsplash.com/600x400/?university,classroom" alt="College Building">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>Our college has been a pioneer in education, providing students with excellent academic programs, modern facilities, and a vibrant campus life. We believe in nurturing future leaders through quality education and holistic development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="courses">
+    <h2>Our Courses</h2>
+    <div class="course-grid">
+      <div class="course">
+        <h3>Engineering</h3>
+        <p>Explore our innovative engineering programs that prepare students for global opportunities.</p>
+      </div>
+      <div class="course">
+        <h3>Computer Science</h3>
+        <p>Learn cutting-edge technologies, coding, and software development skills.</p>
+      </div>
+      <div class="course">
+        <h3>Business Studies</h3>
+        <p>Gain knowledge in management, finance, and entrepreneurship.</p>
+      </div>
+      <div class="course">
+        <h3>Arts & Science</h3>
+        <p>Enhance creativity and critical thinking with diverse arts & science programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My College. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

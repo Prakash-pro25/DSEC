@@ -2,7 +2,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: "Segoe UI", sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
 
-    /* Navbar */
+    /* Navbar 
     header {
       background: #1a237e;;
       color: #fff;
@@ -13,14 +13,25 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-    }
-    .img12{
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      display: flex;
-      z-index: 1010;
-    }
+    }*/
+    header {
+    background: #1a237e;
+    color: #fff;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    .img12 {
+    width: 50px;
+    height: 50px;
+    position: relative;  /* or simply remove this line */
+}
+
     header h1 { font-size: 1.5rem; }
     nav ul { display: flex; list-style: none; }
     nav ul li { margin-left: 20px; }

@@ -14,6 +14,13 @@
       top: 0;
       z-index: 1000;
     }
+    .img12{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      display: flex;
+      z-index: 1010;
+    }
     header h1 { font-size: 1.5rem; }
     nav ul { display: flex; list-style: none; }
     nav ul li { margin-left: 20px; }

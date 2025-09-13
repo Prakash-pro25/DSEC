@@ -309,7 +309,6 @@
     .study-link:hover {
       background-color: var(--hover-color);
     }
-
     .home
        {
         width: 20%;
@@ -318,7 +317,6 @@
         height: 30px;
         border-radius: 20px;
        }
-
        .mater{
            /* background-color: var(--card-bg);*/
        background-color: #f0f4f8;

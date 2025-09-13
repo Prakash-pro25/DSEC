@@ -4,7 +4,7 @@
             const username = document.getElementById('username').value.trim();
             const password = document.getElementById('password').value.trim();
             const errorMsg = document.getElementById('errorMsg');
-
+            
             // List of users
             const users1 = [{ username: "admin", password: "admin123" }];
               const users2 = [{ username: "prakash", password: "prakash123" }];

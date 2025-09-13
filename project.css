@@ -33,6 +33,7 @@
 
 .base11 {
   position: absolute;
+  background-color: rgb(3, 3, 200) ;
   height: 15cm;
   z-index: 3;
   width: 20%;
@@ -40,15 +41,26 @@
   left: 10%;
   border-radius: 20px;
 }
-.b_h4 {
+.b_img {
   position: absolute;
-  height: 10cm;
-  z-index: 3;
-  width: 20%;
-  top: 8cm;
-  left: 11%;
-  border-radius: 20px;
+  border-radius: 100%;
+  height: 130px;
+  width: 130px;
+  top: 5%;
+  left: 30%;
 }
+.b_h4 {
+    position: absolute;
+    top: 8cm;
+    left: 10%;
+    width: 20%;
+    background-color: #f0f4f8;
+    border-radius: 20px;
+    z-index: 5; /* higher than .base11 */
+}
+
+
+
 .base21 {
   position: absolute;
   height: 15cm;
@@ -82,17 +94,8 @@
   right: 200px;
   top: 0%;
 }
-.b_img {
-  position: absolute;
-  border-radius: 100%;
-  height: 130px;
-  width: 130px;
-  top: 5%;
-  left: 30%;
-}
-h4 {
-  text-align: left;
-}
+
+
 
 .section {
         
@@ -314,4 +317,18 @@ h4 {
         background-color: rgb(3, 3, 200);
         height: 30px;
         border-radius: 20px;
+       }
+
+       .mater{
+           /* background-color: var(--card-bg);*/
+       background-color: #f0f4f8;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease;
+        width: 80%;
+        height: 300px;
+        overflow: auto;
+      
        }
